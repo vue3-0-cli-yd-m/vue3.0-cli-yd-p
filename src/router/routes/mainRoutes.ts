@@ -3,6 +3,10 @@ import Home from '@/views/home/index.vue';
 
 const MainRoute: Array<RouteRecordRaw> = [
   {
+    path: '/',
+    redirect: '/home',
+  },
+  {
     path: '/home',
     name: 'HomeIndex',
     component: Home,
