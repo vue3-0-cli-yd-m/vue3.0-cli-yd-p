@@ -1,0 +1,22 @@
+body,
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  line-height: 1.5;
+  font-family: PingFang SC, Source Sans Pro, Hiragino Sans GB, Helvetica Neue, Helvetica, Microsoft Yahei, arial,
+    sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  touch-action: manipulation; //禁止ios上面双击缩放页面
+}
+
+#app {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

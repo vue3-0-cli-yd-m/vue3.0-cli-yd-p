@@ -1,0 +1,69 @@
+.warp {
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform-origin: 0 100vh;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Gudea', sans-serif;
+  background: #214d7c;
+
+  .container {
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    padding: 40px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: sans-serif;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    border-left: 1px solid rgba(255, 255, 255, 1);
+    background: linear-gradient(
+      to top right,
+      rgba(90, 149, 207, 0.5),
+      rgba(70, 91, 119, 0.8)
+    );
+    box-shadow: 10px -10px 20px rgba(0, 0, 0, 0.2),
+      -10px 10px 20px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); /*  元素后面区域添加模糊效果 */
+    border-radius: 8px;
+
+    .title {
+      display: flex;
+      justify-content: center;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .from {
+      margin-top: 20px;
+    }
+
+    .submit {
+      width: 100%;
+      .el-button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.warp_scale {
+  transform: scale(0);
+}
+
+.toggle {
+  z-index: 99;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
+  button {
+    width: 300px;
+    height: 50px;
+  }
+}
